@@ -247,7 +247,7 @@ body {
   background-position: center;
 }
 
-.popups {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -257,43 +257,45 @@ body {
   z-index: 1000;
   overflow: hidden;
 }
-.popups .android {
-  display: none;
-}
-.popups .iphone {
-  display: none;
-}
-.popups .pergunta1 {
-  display: none;
-}
-.popups .pergunta2 {
-  display: none;
-}
-.popups .pergunta3 {
-  display: none;
-}
-.popups .pergunta4 {
-  display: none;
-}
-.popups .pergunta5 {
-  display: none;
-}
-.popups .popup-mobile {
+.overlay .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(../img/fundo-popup-mobile.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 640px;
-  height: 350px;
   z-index: 1010;
   color: #fff;
   text-align: center;
 }
-.popups .popup-mobile h3 {
+.overlay .android {
+  display: none;
+}
+.overlay .iphone {
+  display: none;
+}
+.overlay .pergunta1 {
+  display: none;
+}
+.overlay .pergunta2 {
+  display: none;
+}
+.overlay .pergunta3 {
+  display: none;
+}
+.overlay .pergunta4 {
+  display: none;
+}
+.overlay .pergunta5 {
+  display: none;
+}
+.overlay .modal-mobile {
+  width: 640px;
+  height: 350px;
+  background-image: url(../img/fundo-modal-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.overlay .modal-mobile h3 {
   font-weight: normal;
   margin-top: 88px;
   margin-right: 15px;
@@ -301,13 +303,13 @@ body {
   color: #eabd59;
   text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08, -2px 2px 2px #451c08, 2px 2px 2px #451c08;
 }
-.popups .popup-mobile p {
+.overlay .modal-mobile p {
   margin: 0 auto;
   margin-top: 15px;
   width: 400px;
   font-size: 18px;
 }
-.popups .popup-mobile a {
+.overlay .modal-mobile a {
   display: inline-block;
   width: 250px;
   height: 50px;
@@ -321,26 +323,19 @@ body {
   background-position: center;
   transition: 300ms;
 }
-.popups .popup-mobile a:hover {
+.overlay .modal-mobile a:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
 }
-.popups .popup-faq {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.overlay .modal-faq {
   width: 750px;
   height: 470px;
-  z-index: 1010;
-  color: #fff;
-  text-align: center;
   background-image: url(../img/fundo-pergunta.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
-.popups .popup-faq h3 {
+.overlay .modal-faq h3 {
   font-weight: normal;
   margin-top: 57px;
   margin-left: 85px;
@@ -349,8 +344,93 @@ body {
   color: #feeaa3;
   text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08, -2px 2px 2px #451c08, 2px 2px 2px #451c08;
 }
-.popups .popup-faq p {
+.overlay .modal-faq p {
   text-align: left;
   width: 550px;
   margin: 60px auto 0 auto;
+}
+.overlay form.modal-cadastro {
+  background-image: url(../img/fundo-cadastro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 500px;
+  height: 700px;
+  margin: 0 auto;
+}
+.overlay form.modal-cadastro h1 {
+  margin-top: 72px;
+  font-size: 28px;
+  color: #ecc35f;
+  text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08, -2px 2px 2px #451c08, 2px 2px 2px #451c08;
+}
+.overlay form.modal-cadastro label {
+  display: block;
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 80px;
+  color: #ecc35f;
+  text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08, -2px 2px 2px #451c08, 2px 2px 2px #451c08;
+}
+.overlay form.modal-cadastro input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.overlay form.modal-cadastro input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+.overlay form.modal-cadastro input {
+  display: inline-block;
+  background: none;
+  border: none;
+  width: 350px;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #7f7f99;
+  font-size: 18px;
+  background-image: url(../img/fundo-input.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.overlay form.modal-cadastro div.check-termos {
+  text-align: left;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+.overlay form.modal-cadastro div.check-termos input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.overlay form.modal-cadastro div.check-termos label.termos {
+  display: inline-block;
+  margin: 0;
+  line-height: 20px;
+  vertical-align: top;
+  margin-left: 5px;
+}
+.overlay form.modal-cadastro button[type=submit] {
+  background: none;
+  border: none;
+  display: block;
+  width: 350px;
+  height: 60px;
+  text-align: center;
+  margin: 15px auto 0 auto;
+  font-size: 28px;
+  color: #fbe985;
+  text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08, -2px 2px 2px #451c08, 2px 2px 2px #451c08;
+  background-image: url(../img/fundo-botao-grande-registro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 300ms;
+}
+.overlay form.modal-cadastro button[type=submit]:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }/*# sourceMappingURL=style.css.map */

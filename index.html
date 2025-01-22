@@ -103,8 +103,55 @@
       </div>
     </div>
 
-    <div class="popups">
-      <div class="popup-mobile android">
+    <div class="overlay">
+      <form class="modal-cadastro modal" method="post">
+        <h1>Registro Rápido</h1>
+
+        <label for="email">E-mail:</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="exemplo@gmail.com"
+          required
+        />
+
+        <label for="senha">Senha:</label>
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Digite uma senha"
+          required
+        />
+
+        <label for="confirmar-senha">Confirme a Senha:</label>
+        <input
+          type="password"
+          name="confirmar-senha"
+          id="confirmar-senha"
+          placeholder="Repita a senha"
+          required
+        />
+
+        <label for="whatsapp">Whatsapp:</label>
+        <input
+          type="number"
+          name="whatsapp"
+          id="whatsapp"
+          placeholder="(11) 9.1234-1234"
+          required
+        />
+
+        <div class="check-termos">
+          <input type="checkbox" name="termos" id="termos" required />
+          <label class="termos" for="termos">Li e concordo com os termos</label>
+        </div>
+
+        <button type="submit">REGISTRAR-SE</button>
+      </form>
+
+      <div class="modal-mobile android modal">
         <h3>Disponível para Android</h3>
         <p>
           Para baixar o <span class="destaque">DDT Brasil</span> no seu
@@ -116,7 +163,7 @@
         <a href="#">Link para baixar</a>
       </div>
 
-      <div class="popup-mobile iphone">
+      <div class="modal-mobile iphone modal">
         <h3>Disponível para iPhone</h3>
         <p>
           Para baixar o <span class="destaque">DDT Brasil</span> no seu
@@ -128,27 +175,27 @@
         <a href="#">Link para baixar</a>
       </div>
 
-      <div class="popup-faq pergunta1">
+      <div class="modal-faq pergunta1 modal">
         <h3>1. Como faço para coletar o código que eu ganhei?</h3>
         <p>Resposta da pergunta 1 aqui.</p>
       </div>
 
-      <div class="popup-faq pergunta2">
+      <div class="modal-faq pergunta2 modal">
         <h3>2. Como faço para registrar no DDT Brasil?</h3>
         <p>Resposta da pergunta 2 aqui.</p>
       </div>
 
-      <div class="popup-faq pergunta3">
+      <div class="modal-faq pergunta3 modal">
         <h3>3. Como faço para entrar em contato com o suporte?</h3>
         <p>Resposta da pergunta 3 aqui.</p>
       </div>
 
-      <div class="popup-faq pergunta4">
+      <div class="modal-faq pergunta4 modal">
         <h3>4. Como faço para jogar pelo celular?</h3>
         <p>Resposta da pergunta 4 aqui.</p>
       </div>
 
-      <div class="popup-faq pergunta5">
+      <div class="modal-faq pergunta5 modal">
         <h3>5. Como faço para jogar pelo computador?</h3>
         <p>Resposta da pergunta 5 aqui.</p>
       </div>

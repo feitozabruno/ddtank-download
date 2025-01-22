@@ -297,7 +297,7 @@ body {
   background-position: center;
 }
 
-.popups {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -306,6 +306,18 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   overflow: hidden;
+  // display: none;
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1010;
+
+    color: #fff;
+    text-align: center;
+  }
 
   .android {
     display: none;
@@ -331,24 +343,14 @@ body {
     display: none;
   }
 
-  .popup-mobile {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .modal-mobile {
+    width: 640px;
+    height: 350px;
 
-    background-image: url(../img/fundo-popup-mobile.png);
+    background-image: url(../img/fundo-modal-mobile.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
-    width: 640px;
-    height: 350px;
-    z-index: 1010;
-
-    color: #fff;
-
-    text-align: center;
 
     h3 {
       font-weight: normal;
@@ -393,18 +395,9 @@ body {
     }
   }
 
-  .popup-faq {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+  .modal-faq {
     width: 750px;
     height: 470px;
-    z-index: 1010;
-
-    color: #fff;
-    text-align: center;
 
     background-image: url(../img/fundo-pergunta.png);
     background-size: contain;
@@ -426,6 +419,117 @@ body {
       text-align: left;
       width: 550px;
       margin: 60px auto 0 auto;
+    }
+  }
+
+  form.modal-cadastro {
+    background-image: url(../img/fundo-cadastro.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+
+    h1 {
+      margin-top: 72px;
+      // font-weight: normal;
+      font-size: 28px;
+      color: #ecc35f;
+      text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08,
+        -2px 2px 2px #451c08, 2px 2px 2px #451c08;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+
+      font-size: 20px;
+      text-align: left;
+      margin-left: 80px;
+
+      color: #ecc35f;
+      text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08,
+        -2px 2px 2px #451c08, 2px 2px 2px #451c08;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    input[type="number"] {
+      -moz-appearance: textfield;
+      appearance: textfield;
+    }
+
+    input {
+      display: inline-block;
+
+      background: none;
+      border: none;
+
+      width: 350px;
+      height: 60px;
+
+      padding-left: 20px;
+      padding-right: 20px;
+
+      color: #7f7f99;
+      font-size: 18px;
+
+      background-image: url(../img/fundo-input.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    div.check-termos {
+      text-align: left;
+      margin-left: 80px;
+      margin-top: 10px;
+
+      input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+      }
+
+      label.termos {
+        display: inline-block;
+        margin: 0;
+        line-height: 20px;
+        vertical-align: top;
+        margin-left: 5px;
+      }
+    }
+
+    button[type="submit"] {
+      background: none;
+      border: none;
+      display: block;
+
+      width: 350px;
+      height: 60px;
+
+      text-align: center;
+      margin: 15px auto 0 auto;
+
+      font-size: 28px;
+      color: #fbe985;
+      text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08,
+        -2px 2px 2px #451c08, 2px 2px 2px #451c08;
+
+      background-image: url(../img/fundo-botao-grande-registro.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      transition: 300ms;
+
+      &:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+      }
     }
   }
 }
