@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "PoetsenOne";
+  src: url("../fonts/PoetsenOne-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+body,
+button,
+input,
+textarea {
+  font-size: 16px;
+  font-family: "PoetsenOne", sans-serif;
+  --webkit-font-smoothing: antialiased;
+}
+
+:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px transparent;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+button {
+  border: none;
+  background: none;
+  line-height: 0;
+  cursor: pointer;
+}
+
+body {
+  background-image: url(../img/fundo.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+/* Classes Auxiliares INICIO*/
+.destaque {
+  color: #00eda0;
+}
+
+/* Classes Auxiliares FIM*/
+.content {
+  width: 870px;
+  margin: 0 auto;
+  text-align: center;
+}
+.content a {
+  display: inline-block;
+}
+
+.botao-acessar-site {
+  text-align: right;
+}
+.botao-acessar-site img {
+  width: 180px;
+  height: 45.91px;
+  transition: 300ms;
+}
+.botao-acessar-site img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.logo {
+  margin-top: -40px;
+}
+.logo img {
+  width: 130px;
+  height: 96px;
+  transition: 300ms;
+}
+.logo img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.main {
+  width: 810px;
+  height: 828px;
+  margin: 0 auto;
+  margin-top: -25px;
+  background-image: url(../img/base.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #d4d4d4;
+}
+.main h1 {
+  padding-top: 85px;
+  color: #eab319;
+  text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, 0px 5px 4px #000, 1px 1px 2px #000;
+  font-weight: normal;
+  font-size: 28px;
+}
+.main p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000;
+}
+.main .lista-dispositivos {
+  background-color: #000;
+  padding: 2px 15px;
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 14px;
+}
+.main .hall {
+  margin-top: -20px;
+  padding: 45px;
+  background-image: url(../img/divisao.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main .hall img {
+  margin-top: -20px;
+  width: 350px;
+  height: 212.59px;
+}
+.main .coleta {
+  width: 810px;
+  height: 70px;
+  margin-top: -50px;
+  background-image: url(../img/fundo-coleta.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main .coleta p {
+  padding-top: 8px;
+}
+.main .coleta span {
+  font-size: 22px;
+  text-shadow: -2px -2px 2px #000ba3, 2px -2px 2px #000ba3, -2px 2px 2px #000ba3, 2px 2px 2px #000ba3;
+}
+.main .links-download {
+  color: #fff;
+  margin-top: 2px;
+  background-color: #000;
+  border-radius: 12px;
+  padding: 5px;
+  display: inline-block;
+}
+.main .links-download button {
+  display: inline-block;
+  background-image: url(../img/fundo-botao-download.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 165px;
+  height: 50px;
+  line-height: 45px;
+  color: #743b1c;
+  text-shadow: -2px -2px 2px #fffb93, 2px -2px 2px #fffb93, -2px 2px 2px #fffb93, 2px 2px 2px #fffb93;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 300ms;
+}
+.main .links-download button:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+.main .links-download p {
+  font-size: 14px;
+}
+.main .container {
+  padding-top: 85px;
+}
+.main .container .faq {
+  display: inline-block;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  width: 370px;
+  margin-left: 107.5px;
+  padding-right: 20px;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: #818181;
+  border-radius: 2px;
+}
+.main .container .faq h3 {
+  font-weight: normal;
+  color: #f6e05d;
+  text-shadow: -1px -1px 2px #512f13, 1px -1px 2px #512f13, -1px 1px 2px #512f13, 1px 1px 2px #512f13;
+}
+.main .container .faq p {
+  cursor: pointer;
+}
+.main .container .faq p:hover {
+  text-decoration: underline;
+}
+.main .container .registro {
+  display: inline-block;
+  width: 240px;
+  vertical-align: top;
+  padding: 10px;
+  margin-right: 87.5px;
+  background-image: url(../img/fundo-registro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ff4b4b;
+  text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000;
+  font-size: 18px;
+}
+.main .container .registro button {
+  display: inline-block;
+  width: 150px;
+  height: 80px;
+  background-image: url(../img/fundo-botao-registro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  line-height: 18px;
+  color: #fff;
+  text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000;
+  font-size: 18px;
+  transition: 300ms;
+}
+.main .container .registro button:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.footer {
+  margin-top: 5px;
+  color: #d4d4d4;
+  text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000;
+  font-size: 14px;
+  padding-top: 5px;
+  height: 28px;
+  background-image: url(../img/rodape.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}/*# sourceMappingURL=style.css.map */
