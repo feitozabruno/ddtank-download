@@ -296,3 +296,136 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.popups {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow: hidden;
+
+  .android {
+    display: none;
+  }
+
+  .iphone {
+    display: none;
+  }
+
+  .pergunta1 {
+    display: none;
+  }
+  .pergunta2 {
+    display: none;
+  }
+  .pergunta3 {
+    display: none;
+  }
+  .pergunta4 {
+    display: none;
+  }
+  .pergunta5 {
+    display: none;
+  }
+
+  .popup-mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: url(../img/fundo-popup-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 640px;
+    height: 350px;
+    z-index: 1010;
+
+    color: #fff;
+
+    text-align: center;
+
+    h3 {
+      font-weight: normal;
+      margin-top: 88px;
+      margin-right: 15px;
+      font-size: 22px;
+
+      color: #eabd59;
+      text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08,
+        -2px 2px 2px #451c08, 2px 2px 2px #451c08;
+    }
+
+    p {
+      margin: 0 auto;
+      margin-top: 15px;
+      width: 400px;
+      font-size: 18px;
+    }
+
+    a {
+      display: inline-block;
+      width: 250px;
+      height: 50px;
+      margin-top: 10px;
+      line-height: 45px;
+
+      color: #fff;
+      text-shadow: -2px -2px 2px #3f1a07, 2px -2px 2px #3f1a07,
+        -2px 2px 2px #3f1a07, 2px 2px 2px #3f1a07;
+
+      background-image: url(../img/fundo-botao-mobile.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      transition: 300ms;
+
+      &:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+      }
+    }
+  }
+
+  .popup-faq {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 750px;
+    height: 470px;
+    z-index: 1010;
+
+    color: #fff;
+    text-align: center;
+
+    background-image: url(../img/fundo-pergunta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h3 {
+      font-weight: normal;
+      margin-top: 57px;
+      margin-left: 85px;
+      text-align: left;
+      font-size: 18px;
+      color: #feeaa3;
+      text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08,
+        -2px 2px 2px #451c08, 2px 2px 2px #451c08;
+    }
+
+    p {
+      text-align: left;
+      width: 550px;
+      margin: 60px auto 0 auto;
+    }
+  }
+}
