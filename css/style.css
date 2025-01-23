@@ -256,6 +256,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   overflow: hidden;
+  display: none;
 }
 .overlay .modal {
   position: absolute;
@@ -270,6 +271,12 @@ body {
   display: none;
 }
 .overlay .iphone {
+  display: none;
+}
+.overlay .modal-cadastro {
+  display: none;
+}
+.overlay .modal-navegadores {
   display: none;
 }
 .overlay .pergunta1 {
@@ -433,4 +440,132 @@ body {
 .overlay form.modal-cadastro button[type=submit]:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
+}
+.overlay .modal-navegadores {
+  background-image: url(../img/fundo-navegadores.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 810px;
+  height: 427px;
+  text-align: left;
+  margin: 0 auto;
+}
+.overlay .modal-navegadores h1 {
+  text-align: center;
+  margin-top: 68px;
+  font-size: 24px;
+  color: #ecc35f;
+  text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08, -2px 2px 2px #451c08, 2px 2px 2px #451c08;
+}
+.overlay .modal-navegadores h3 {
+  text-align: center;
+  font-weight: normal;
+  margin-top: -5px;
+  color: #ecc35f;
+  text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08, -2px 2px 2px #451c08, 2px 2px 2px #451c08;
+}
+.overlay .modal-navegadores div {
+  width: calc(33.3333333333% - 83px);
+}
+.overlay .modal-navegadores a {
+  display: inline-block;
+  position: relative;
+  background-image: url(../img/fundo-botao-flash.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #feeaa3;
+  text-shadow: -2px -2px 2px #451c08, 2px -2px 2px #451c08, -2px 2px 2px #451c08, 2px 2px 2px #451c08;
+  line-height: 1.2;
+  transition: 300ms;
+}
+.overlay .modal-navegadores a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+.overlay .modal-navegadores .flash {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+.overlay .modal-navegadores .flash a {
+  width: 195px;
+  height: 58px;
+  margin-top: 12px;
+}
+.overlay .modal-navegadores .flash a img {
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+}
+.overlay .modal-navegadores .flash a span {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.4;
+}
+.overlay .modal-navegadores .logger {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.overlay .modal-navegadores .logger a {
+  width: 195px;
+  height: 58px;
+  margin-top: 12px;
+}
+.overlay .modal-navegadores .logger a img {
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+}
+.overlay .modal-navegadores .logger a span {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 55px;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.overlay .modal-navegadores .portables {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+.overlay .modal-navegadores .portables a {
+  width: 190px;
+  height: 50px;
+  margin-top: 2px;
+  background-image: url(../img/fundo-portables.png);
+}
+.overlay .modal-navegadores .portables a img {
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+.overlay .modal-navegadores .portables a span {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.4;
 }/*# sourceMappingURL=style.css.map */
