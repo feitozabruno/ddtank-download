@@ -47,9 +47,9 @@
 
         <div class="links-download">
           <div class="links">
-            <button>Android</button>
-            <button>iPhone</button>
-            <button>Computador</button>
+            <button id="android-btn">Android</button>
+            <button id="iphone-btn">iPhone</button>
+            <button id="computador-btn">Computador</button>
           </div>
           <p>
             Selecione acima para jogar
@@ -62,27 +62,27 @@
           <div class="faq">
             <h3>FAQ - Perguntas e respostas:</h3>
 
-            <p>
+            <p id="faq1">
               <span class="destaque">1. </span>Como faço para coletar o código
               que eu ganhei?
             </p>
 
-            <p>
+            <p id="faq2">
               <span class="destaque">2. </span>Como faço para registrar no DDT
               Brasil?
             </p>
 
-            <p>
+            <p id="faq3">
               <span class="destaque">3. </span>Como faço para entrar em contato
               com o suporte?
             </p>
 
-            <p>
+            <p id="faq4">
               <span class="destaque">4. </span>Como faço para jogar pelo
               celular?
             </p>
 
-            <p>
+            <p id="faq5">
               <span class="destaque">5. </span>Como faço para jogar pelo
               computador?
             </p>
@@ -90,7 +90,7 @@
 
           <div class="registro">
             <p>Não tem conta?</p>
-            <button>Registre-se Rapidamente.</button>
+            <button id="registro-btn">Registre-se Rapidamente.</button>
           </div>
         </div>
       </div>
@@ -103,8 +103,8 @@
       </div>
     </div>
 
-    <div class="overlay">
-      <form class="modal-cadastro modal" method="post">
+    <div class="overlay" id="overlay">
+      <form id="modal-registro" class="modal-cadastro modal" method="post">
         <h1>Registro Rápido</h1>
 
         <label for="email">E-mail:</label>
@@ -151,7 +151,7 @@
         <button type="submit">REGISTRAR-SE</button>
       </form>
 
-      <div class="modal-navegadores modal">
+      <div id="modal-computador" class="modal-navegadores modal">
         <h1>Selecione um navegador compatível</h1>
         <div class="flash">
           <h3>Navegador Flash</h3>
@@ -216,7 +216,7 @@
         </div>
       </div>
 
-      <div class="modal-mobile android modal">
+      <div id="modal-android" class="modal-mobile android modal">
         <h3>Disponível para Android</h3>
         <p>
           Para baixar o <span class="destaque">DDT Brasil</span> no seu
@@ -228,7 +228,7 @@
         <a href="#">Link para baixar</a>
       </div>
 
-      <div class="modal-mobile iphone modal">
+      <div id="modal-iphone" class="modal-mobile iphone modal">
         <h3>Disponível para iPhone</h3>
         <p>
           Para baixar o <span class="destaque">DDT Brasil</span> no seu
@@ -240,30 +240,31 @@
         <a href="#">Link para baixar</a>
       </div>
 
-      <div class="modal-faq pergunta1 modal">
+      <div id="resposta1" class="modal-faq pergunta1 modal">
         <h3>1. Como faço para coletar o código que eu ganhei?</h3>
         <p>Resposta da pergunta 1 aqui.</p>
       </div>
 
-      <div class="modal-faq pergunta2 modal">
+      <div id="resposta2" class="modal-faq pergunta2 modal">
         <h3>2. Como faço para registrar no DDT Brasil?</h3>
         <p>Resposta da pergunta 2 aqui.</p>
       </div>
 
-      <div class="modal-faq pergunta3 modal">
+      <div id="resposta3" class="modal-faq pergunta3 modal">
         <h3>3. Como faço para entrar em contato com o suporte?</h3>
         <p>Resposta da pergunta 3 aqui.</p>
       </div>
 
-      <div class="modal-faq pergunta4 modal">
+      <div id="resposta4" class="modal-faq pergunta4 modal">
         <h3>4. Como faço para jogar pelo celular?</h3>
         <p>Resposta da pergunta 4 aqui.</p>
       </div>
 
-      <div class="modal-faq pergunta5 modal">
+      <div id="resposta5" class="modal-faq pergunta5 modal">
         <h3>5. Como faço para jogar pelo computador?</h3>
         <p>Resposta da pergunta 5 aqui.</p>
       </div>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
