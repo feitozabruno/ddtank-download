@@ -589,8 +589,8 @@ body {
     background-position: left;
   }
   .overlay .modal-mobile {
-    width: 72vw;
-    height: 35vw;
+    width: 100vw;
+    height: 60vw;
   }
   .overlay .modal-mobile div {
     position: absolute;
@@ -599,21 +599,36 @@ body {
     transform: translate(-50%, -50%);
   }
   .overlay .modal-mobile h3 {
-    margin-top: 1px;
-    margin-right: 1.69vw;
-    font-size: 2.47vw;
+    margin-top: -3.37vw;
+    margin-right: 1.8vw;
+    font-size: 4.05vw;
   }
   .overlay .modal-mobile p {
-    margin-top: 1.69vw;
-    width: 44.94vw;
-    font-size: 2.02vw;
+    margin-top: 3.93vw;
+    width: 60vw;
+    font-size: 2.7vw;
   }
   .overlay .modal-mobile a {
-    width: 28.09vw;
-    height: 5.61vw;
-    margin-top: 1.13vw;
-    line-height: 5.06vw;
-    font-size: 1.8vw;
+    width: 33.7vw;
+    height: 6.74vw;
+    margin-top: 3.37vw;
+    line-height: 6.07vw;
+    font-size: 2.7vw;
+  }
+  .overlay .modal-faq {
+    width: 100vw;
+    height: 87vw;
+    background-image: url(../img/mobile/fundo-pergunta.png);
+  }
+  .overlay .modal-faq h3 {
+    margin-top: 12.36vw;
+    margin-left: 9.55vw;
+    font-size: 2.7vw;
+  }
+  .overlay .modal-faq p {
+    font-size: 2.25vw;
+    width: 80vw;
+    margin: 4.5vw auto 0 auto;
   }
   .desktop {
     display: none;
