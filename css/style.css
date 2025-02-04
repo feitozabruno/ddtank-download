@@ -51,21 +51,21 @@ body {
 }
 
 /* Classes Auxiliares FIM*/
-.content {
+.desktop {
   width: 870px;
   margin: 0 auto;
   text-align: center;
   position: relative;
 }
-.content .mascote {
+.desktop .mascote {
   position: absolute;
   top: 190px;
   right: -290px;
 }
-.content .mascote img {
+.desktop .mascote img {
   width: 500px;
 }
-.content a {
+.desktop a {
   display: inline-block;
 }
 
@@ -588,7 +588,34 @@ body {
   body {
     background-position: left;
   }
-  .content {
+  .overlay .modal-mobile {
+    width: 72vw;
+    height: 35vw;
+  }
+  .overlay .modal-mobile div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .overlay .modal-mobile h3 {
+    margin-top: 1px;
+    margin-right: 1.69vw;
+    font-size: 2.47vw;
+  }
+  .overlay .modal-mobile p {
+    margin-top: 1.69vw;
+    width: 44.94vw;
+    font-size: 2.02vw;
+  }
+  .overlay .modal-mobile a {
+    width: 28.09vw;
+    height: 5.61vw;
+    margin-top: 1.13vw;
+    line-height: 5.06vw;
+    font-size: 1.8vw;
+  }
+  .desktop {
     display: none;
   }
   .mobile {
