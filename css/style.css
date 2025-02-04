@@ -37,11 +37,12 @@ button {
 }
 
 body {
-  background-image: url(../img/fundo.png);
+  background-image: url(../img/background.png);
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 /* Classes Auxiliares INICIO*/
@@ -54,6 +55,15 @@ body {
   width: 870px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+}
+.content .mascote {
+  position: absolute;
+  top: 190px;
+  right: -290px;
+}
+.content .mascote img {
+  width: 500px;
 }
 .content a {
   display: inline-block;
@@ -585,6 +595,7 @@ body {
     display: block;
     margin: 0 auto;
     text-align: center;
+    overflow-x: hidden;
   }
   .logo {
     margin-top: -20px;
@@ -601,7 +612,7 @@ body {
     height: auto;
   }
   .main {
-    width: 97.75vw;
+    width: 100vw;
     height: auto;
     margin-top: -10px;
     background-image: url(../img/mobile/base.png);
