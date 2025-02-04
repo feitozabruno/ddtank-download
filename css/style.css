@@ -731,9 +731,9 @@ body {
     width: 83.48vw;
     height: 5.17vw;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 9px;
+    margin-top: 2.25vw;
+    margin-bottom: 2.25vw;
+    padding-top: 1.01vw;
     background-image: url(../img/mobile/fundo-rodape.png);
     background-size: contain;
     background-repeat: no-repeat;
