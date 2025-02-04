@@ -703,6 +703,9 @@ body {
 }
 
 @media (max-width: 890px) {
+  body {
+    background-position: left;
+  }
   .content {
     display: none;
   }
@@ -802,6 +805,7 @@ body {
       button {
         width: 29.21vw;
         height: 8.76vw;
+        line-height: 1;
         font-size: 3.15vw;
       }
 
