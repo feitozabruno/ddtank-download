@@ -52,6 +52,8 @@ body {
 /* Classes Auxiliares FIM*/
 
 .content {
+  display: none;
+
   width: 870px;
   margin: 0 auto;
   text-align: center;
@@ -692,6 +694,116 @@ body {
           font-size: 11px;
           line-height: 1.4;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .content {
+    display: none;
+  }
+
+  .mobile {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .logo {
+    margin-top: -20px;
+
+    img {
+      width: 14.61vw;
+      height: auto;
+    }
+  }
+
+  .botao-acessar-site {
+    margin-right: 20px;
+
+    img {
+      width: 20.22vw;
+      height: auto;
+    }
+  }
+
+  .main {
+    width: 97.75vw; //870px
+    height: 84.55vh; // 837px;
+    margin-top: -10px;
+    background-image: url(../img/mobile/base.png);
+    background-position: top;
+
+    h1 {
+      padding-top: 10.11vw; // 90px
+      font-size: 4.05vw; // 36px
+    }
+
+    p {
+      margin-top: 1.69vw;
+      margin-bottom: 0px;
+      font-size: 2.7vw;
+    }
+
+    .lista-dispositivos {
+      padding: 1.13vw 6.74vw;
+      margin-top: 1.13vw;
+
+      p {
+        margin-top: 0;
+      }
+    }
+
+    .hall {
+      margin-top: -5.62vw;
+      padding: 4.59vw 0px;
+      background-image: url(../img/mobile/divisor.png);
+
+      img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 2.81vw;
+        width: 52.7vw;
+        height: 32.02vw;
+      }
+    }
+
+    .coleta {
+      width: 93.75vw;
+      height: 12.92vw;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: -3.93vw;
+
+      p {
+        padding-top: 2.25vw;
+      }
+
+      span {
+        font-size: 3.6vw;
+      }
+    }
+
+    .links-download {
+      color: #fff;
+      margin-top: 2.25vw;
+
+      width: 93.75vw;
+
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 12px;
+      padding: 5px;
+      display: inline-block;
+
+      button {
+        width: 29.21vw;
+        height: 8.76vw;
+        font-size: 3.15vw;
+      }
+
+      p {
+        margin: 0;
+        font-size: 2.25vw;
       }
     }
   }

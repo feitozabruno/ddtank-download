@@ -51,6 +51,7 @@ body {
 
 /* Classes Auxiliares FIM*/
 .content {
+  display: none;
   width: 870px;
   margin: 0 auto;
   text-align: center;
@@ -568,4 +569,94 @@ body {
   text-align: center;
   font-size: 11px;
   line-height: 1.4;
+}
+
+@media (max-width: 890px) {
+  .content {
+    display: none;
+  }
+  .mobile {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .logo {
+    margin-top: -20px;
+  }
+  .logo img {
+    width: 14.61vw;
+    height: auto;
+  }
+  .botao-acessar-site {
+    margin-right: 20px;
+  }
+  .botao-acessar-site img {
+    width: 20.22vw;
+    height: auto;
+  }
+  .main {
+    width: 97.75vw;
+    height: 84.55vh;
+    margin-top: -10px;
+    background-image: url(../img/mobile/base.png);
+    background-position: top;
+  }
+  .main h1 {
+    padding-top: 10.11vw;
+    font-size: 4.05vw;
+  }
+  .main p {
+    margin-top: 1.69vw;
+    margin-bottom: 0px;
+    font-size: 2.7vw;
+  }
+  .main .lista-dispositivos {
+    padding: 1.13vw 6.74vw;
+    margin-top: 1.13vw;
+  }
+  .main .lista-dispositivos p {
+    margin-top: 0;
+  }
+  .main .hall {
+    margin-top: -5.62vw;
+    padding: 4.59vw 0px;
+    background-image: url(../img/mobile/divisor.png);
+  }
+  .main .hall img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 2.81vw;
+    width: 52.7vw;
+    height: 32.02vw;
+  }
+  .main .coleta {
+    width: 93.75vw;
+    height: 12.92vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -3.93vw;
+  }
+  .main .coleta p {
+    padding-top: 2.25vw;
+  }
+  .main .coleta span {
+    font-size: 3.6vw;
+  }
+  .main .links-download {
+    color: #fff;
+    margin-top: 2.25vw;
+    width: 93.75vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    padding: 5px;
+    display: inline-block;
+  }
+  .main .links-download button {
+    width: 29.21vw;
+    height: 8.76vw;
+    font-size: 3.15vw;
+  }
+  .main .links-download p {
+    margin: 0;
+    font-size: 2.25vw;
+  }
 }/*# sourceMappingURL=style.css.map */
