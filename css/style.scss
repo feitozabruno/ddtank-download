@@ -740,6 +740,20 @@ body {
     margin-top: -10px;
     background-image: url(../img/mobile/base.png);
     background-position: top;
+    position: relative;
+    overflow-x: hidden;
+
+    .mascote {
+      position: absolute;
+      top: 19.1vw;
+      right: -20.23vw;
+
+      img {
+        width: 58.88vw;
+        height: 63.82vw;
+        object-fit: contain;
+      }
+    }
 
     h1 {
       padding-top: 10.11vw; // 90px

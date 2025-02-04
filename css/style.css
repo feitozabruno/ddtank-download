@@ -606,6 +606,19 @@ body {
     margin-top: -10px;
     background-image: url(../img/mobile/base.png);
     background-position: top;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .main .mascote {
+    position: absolute;
+    top: 19.1vw;
+    right: -20.23vw;
+  }
+  .main .mascote img {
+    width: 58.88vw;
+    height: 63.82vw;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .main h1 {
     padding-top: 10.11vw;
