@@ -52,8 +52,6 @@ body {
 /* Classes Auxiliares FIM*/
 
 .content {
-  display: none;
-
   width: 870px;
   margin: 0 auto;
   text-align: center;
@@ -240,6 +238,7 @@ body {
         }
       }
     }
+
     .registro {
       display: inline-block;
       width: 240px;
@@ -699,12 +698,17 @@ body {
   }
 }
 
+.mobile {
+  display: none;
+}
+
 @media (max-width: 890px) {
   .content {
     display: none;
   }
 
   .mobile {
+    display: block;
     margin: 0 auto;
     text-align: center;
   }
@@ -729,7 +733,7 @@ body {
 
   .main {
     width: 97.75vw; //870px
-    height: 84.55vh; // 837px;
+    height: auto; // 837px;
     margin-top: -10px;
     background-image: url(../img/mobile/base.png);
     background-position: top;
@@ -805,6 +809,109 @@ body {
         margin: 0;
         font-size: 2.25vw;
       }
+    }
+
+    .faq {
+      color: #fff;
+      text-align: left;
+      margin: 0 auto;
+
+      h3 {
+        font-size: 4.05vw;
+        text-align: center;
+        font-weight: normal;
+        color: #f6e05d;
+        text-shadow: -1px -1px 2px #512f13, 1px -1px 2px #512f13,
+          -1px 1px 2px #512f13, 1px 1px 2px #512f13;
+        margin-top: 1.13vw;
+        margin-bottom: 1.13vw;
+      }
+
+      p {
+        margin: 0 auto;
+        margin-bottom: 5px;
+        cursor: pointer;
+        font-size: 2.25vw;
+        line-height: 2.5;
+        padding-left: 11.24vw;
+        width: 93.26vw;
+        height: 6.07vw;
+
+        background-image: url(../img/mobile/fundo-pergunta-faq.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .registro {
+      width: 70.22vw;
+      height: 20.45vw;
+      margin: 0 auto;
+
+      background-image: url(../img/mobile/overlay-registro.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      p {
+        padding-top: 2.25vw;
+        margin-bottom: 1.13vw;
+        color: #ff4b4b;
+        text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000,
+          1px 1px 2px #000;
+        font-size: 2.7vw;
+      }
+
+      button {
+        width: 61vw;
+        height: 10.44vw;
+
+        background-image: url(../img/mobile/fundo-registro.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        font-size: 3.146vw;
+        line-height: 3.146vw;
+        color: #fff;
+        text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000,
+          1px 1px 2px #000;
+
+        transition: 300ms;
+
+        &:hover {
+          transform: scale(1.1);
+          filter: brightness(1.2);
+        }
+      }
+    }
+  }
+
+  .footer {
+    width: 83.48vw;
+    height: 5.17vw;
+    margin: 0 auto;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 9px;
+
+    background-image: url(../img/mobile/fundo-rodape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    p {
+      margin: 0;
+      color: #d4d4d4;
+      text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000,
+        2px 2px 2px #000;
+      font-size: 22px;
     }
   }
 }
