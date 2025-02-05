@@ -770,6 +770,178 @@ body {
         margin: 4.5vw auto 0 auto;
       }
     }
+
+    .modal-navegadores {
+      width: 100vw;
+      height: 55vw;
+
+      h1 {
+        margin-top: 10.11vw;
+        font-size: 2.25vw;
+      }
+
+      h3 {
+        margin-top: -0.56vw;
+        font-size: 1.8vw;
+      }
+
+      div {
+        width: calc((100% / 3) - 9.33vw);
+      }
+
+      a {
+        line-height: 1.2;
+      }
+
+      .flash {
+        margin-top: 2.25vw;
+        margin-left: 8.99vw;
+
+        a {
+          width: 21.91vw;
+          height: 6.52vw;
+          margin-top: 1.35vw;
+
+          img {
+            width: 3.93vw;
+            height: 3.93vw;
+          }
+
+          span {
+            font-size: 1.24vw;
+            line-height: 1.4;
+          }
+        }
+      }
+
+      .logger {
+        margin-top: 2.25vw;
+        margin-left: 4.49vw;
+
+        a {
+          width: 21.91vw;
+          height: 6.52vw;
+          margin-top: 1.35vw;
+
+          img {
+            width: 3.93vw;
+            height: 3.93vw;
+          }
+
+          span {
+            font-size: 1.35vw;
+            line-height: 1.4;
+          }
+        }
+      }
+
+      .portables {
+        margin-top: 2.25vw;
+        margin-left: 3.93vw;
+
+        a {
+          width: 21.35vw;
+          height: 5.62vw;
+          margin-top: 0.22vw;
+
+          img {
+            width: 3.37vw;
+            height: 3.37vw;
+          }
+
+          span {
+            font-size: 1.24vw;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+
+    // .modal-navegadores {
+    //   width: 100vw;
+    //   height: 55vw;
+
+    //   h1 {
+    //     margin-top: 90px;
+    //     font-size: 20px;
+    //   }
+
+    //   h3 {
+    //     margin-top: -5px;
+    //     font-size: 16px;
+    //   }
+
+    //   div {
+    //     width: calc((100% / 3) - 83px);
+    //   }
+
+    //   a {
+    //     line-height: 1.2;
+    //   }
+
+    //   .flash {
+    //     margin-top: 20px;
+    //     margin-left: 80px;
+
+    //     a {
+    //       width: 195px;
+    //       height: 58px;
+    //       margin-top: 12px;
+
+    //       img {
+    //         width: 35px;
+    //         height: 35px;
+    //       }
+
+    //       span {
+    //         font-size: 11px;
+    //         line-height: 1.4;
+    //       }
+    //     }
+    //   }
+
+    //   .logger {
+    //     margin-top: 20px;
+    //     margin-left: 40px;
+
+    //     a {
+    //       width: 195px;
+    //       height: 58px;
+    //       margin-top: 12px;
+
+    //       img {
+    //         width: 35px;
+    //         height: 35px;
+    //       }
+
+    //       span {
+    //         font-size: 12px;
+    //         line-height: 1.4;
+    //       }
+    //     }
+    //   }
+
+    //   .portables {
+    //     margin-top: 20px;
+    //     margin-left: 35px;
+
+    //     a {
+    //       width: 190px;
+    //       height: 50px;
+    //       margin-top: 2px;
+
+    //       img {
+    //         width: 30px;
+    //         height: 30px;
+    //       }
+
+    //       span {
+    //         font-size: 11px;
+    //         line-height: 1.4;
+    //       }
+    //     }
+    //   }
+    // }
   }
 
   .desktop {
